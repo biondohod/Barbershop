@@ -100,6 +100,25 @@ main {
     background-color: #595959;
 }
 
+.button-white {
+    background-color: #fff;
+    color: #242424;
+}
+
+.button-white:hover {
+    background-color: #DBB590;
+}
+
+.button-white:focus-visible,
+.button-white:active {
+    outline: 2px solid #AF7842;
+}
+
+.button-white:disabled {
+    background-color: #595959;
+    color: #E7E7E7;
+}
+
 .services .button {
     margin-top: 10px;
     margin-bottom: 14px;
@@ -424,6 +443,7 @@ main {
     display: flex;
     align-items: flex-start;
 }
+
 .gallery-pagination-item:not(:last-child) {
     margin-right: 8px;
 }
@@ -433,7 +453,7 @@ main {
     width: 8px;
     height: 8px;
     border: none;
-    background-color:  #BDBDBD;
+    background-color: #BDBDBD;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -448,5 +468,141 @@ main {
 
 .pagination-button:focus-visible,
 .pagination-button:active {
-    background-color: #DBB590;;
+    background-color: #DBB590;
+    ;
+}
+
+.contacts-appointment-wrapper {
+    display: flex;
+    min-width: 940px;
+    margin-top: 31px;
+    padding: 40px;
+    color: #242424;
+    background: #FBF7F4 url("../images/pattern.png");
+}
+
+.contacts {
+    min-width: 430px;
+    padding-right: 40px;
+    border-right: 1px dashed #595959;
+}
+
+.contacts-title {
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.contacts-side-title {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #AF7842;
+    margin: 0;
+}
+
+.contacts-address {
+    max-width: 350px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #242424;
+    margin: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.contacts-phone {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: #242424;
+    text-decoration: none;
+    margin-bottom: 22px;
+}
+
+.schedule-list {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 21px;
+    padding: 0;
+}
+
+.schedule-item {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #242424;
+}
+
+.contacts-button-wrapper {
+    display: flex;
+}
+
+.contacts .button-white {
+    margin-left: 16px;
+}
+
+.appointment {
+    padding-left: 40px;
+}
+
+.appointment-title {
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.appointment-description {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.appointment-form {
+    display: grid;
+    grid-template-columns: 114px 17px 74px 17px 208px;
+}
+
+.appointment-date {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+}
+
+.appointment-form-title {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.appointment-tooltip {
+    width: 12px;
+    height: 12px;
+    background: #151515 url("../images/info.svg") no-repeat center;
+    border-radius: 50%;
+}
+
+.appointment-time {
+    grid-column: 3/4;
+}
+
+.appointment-phone {
+    grid-column: 5/6;
+}
+
+.appointment-name {
+    grid-column: 1/-1;
+}
+
+.appointment-form .button {
+    grid-column: 1/3;
 }
