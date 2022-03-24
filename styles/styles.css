@@ -165,7 +165,7 @@ main {
 .navigation-link {
     text-decoration: none;
     color: #fff;
-    padding: 22px 22px;
+    padding: 21px 22px;
     border: 4px solid #000;
     min-height: 70px;
 }
@@ -828,4 +828,27 @@ main {
 
 .footer-copyright-link {
     color: #DBB590;
+}
+
+.logo-navigation-link {
+    width: 140px;
+    padding: 26px 0;
+    background: url("../images/catalog-logo.svg") no-repeat center;
+}
+
+.navigation-link-current {
+    position: relative;
+}
+.navigation-link-current::after {
+    position: absolute;
+    left: 20px;
+    bottom: -5px;
+    right: 20px;
+    height: 4px;
+    background-color: #fff;
+    content: "";
+}
+
+.catalog-main {
+    background: #FBF7F4 url("../images/pattern.png");
 }
