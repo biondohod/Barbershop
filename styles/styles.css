@@ -1013,6 +1013,10 @@ main {
     line-height: 22px;
 }
 
+.price-input-item + .price-input-item {
+    margin-left: 4px;
+}
+
 .price-input {
     width: 40px;
     font-family: "PT Sans", sans-serif;
