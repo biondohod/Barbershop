@@ -1249,8 +1249,8 @@ main {
     font-weight: 700;
     font-size: 16px;
     line-height: 16px;
-    width: 54px;
-    height: 44px;
+    min-width: 54px;
+    min-height: 44px;
 }
 
 .pagination-current {
